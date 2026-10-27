@@ -16,7 +16,7 @@ document.getElementById("calendar-preview")?.addEventListener("click", () => {
   const field = document.getElementById("calendar-link");
   const status = document.getElementById("calendar-status");
   const value = field.value.trim();
-  if (!value || !/^https?:\\/\\//i.test(value)) {
+  if (!value || !/^https?:\/\//i.test(value)) {
     status.textContent = "Enter your full calendar URL, starting with https://.";
     return;
   }
