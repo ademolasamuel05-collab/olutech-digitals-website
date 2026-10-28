@@ -74,3 +74,95 @@
 .detail-panel p:last-child{margin-bottom:0}
 .services-cta{margin-top:38px}
 @media(max-width:680px){.service-details{gap:13px;margin-top:32px}.service-detail{grid-template-columns:1fr;padding:22px;gap:20px}.service-detail.detail-reverse>div:first-child,.service-detail.detail-reverse .detail-panel{order:initial}.service-detail h2{font-size:27px}.detail-panel{padding:18px}}
+
+/* v9: stronger navy-and-white contrast, especially on the booking page */
+.booking-section{background:linear-gradient(135deg,#0b1424 0%,#101e31 100%);color:#f5f8fc;position:relative;overflow:hidden}
+.booking-section:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(180deg,#ffffff,rgba(255,255,255,0));opacity:.65;pointer-events:none}
+.booking-copy,.booking-copy h1{color:#f5f8fc}
+.booking-copy>p{color:#c4cfdd}
+.booking-copy .eyebrow{color:#ffffff}
+.booking-copy h1 span{color:#ffffff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.35);text-decoration-thickness:3px;text-underline-offset:7px}
+.booking-copy .check-list{color:#e4ebf4}
+.booking-copy .check-list li span{color:#0b1424;background:#ffffff}
+.booking-copy .booking-note{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:15px;color:#ffffff}
+.booking-copy .booking-note p{color:#c4cfdd}
+.calendar-card{background:#ffffff;color:#0b1424;border:1px solid rgba(255,255,255,.8);box-shadow:0 24px 70px rgba(0,0,0,.24)}
+.calendar-heading h2{color:#0b1424}
+.calendar-intro{color:#536176}
+.calendar-placeholder{background:#f4f7fb;border-color:#cbd5e1}
+.calendar-placeholder h3{color:#0b1424}
+.calendar-placeholder p{color:#536176}
+.calendar-link-setting{border-top-color:#e2e8f0}
+.calendar-link-setting label{color:#0b1424}
+.calendar-link-setting input{border-color:#cbd5e1}
+
+/* Keep the contact / WhatsApp widget visible above hosting overlays and page content. */
+.contact-widget{z-index:9999;right:20px;bottom:20px}
+.contact-widget-trigger{background:#128c7e;color:#ffffff;box-shadow:0 12px 32px rgba(0,0,0,.35);border:2px solid rgba(255,255,255,.92);min-height:54px}
+.contact-widget-trigger .widget-trigger-icon{background:#ffffff;color:#128c7e;font-weight:900}
+.contact-widget-panel{position:relative;z-index:10000}
+@media(max-width:680px){.contact-widget{right:12px;bottom:12px}.booking-section{padding-top:58px}.calendar-card{box-shadow:0 14px 36px rgba(0,0,0,.22)}}
+
+/* Services page navy-and-white colour treatment */
+.services-section.services-page{background:#0b1424;color:#f5f8fc;position:relative;overflow:hidden}
+.services-page .centered h2{color:#f5f8fc}
+.services-page .centered h2 span{color:#ffffff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.28);text-underline-offset:8px}
+.services-page .centered .eyebrow{color:#c6d3e4}
+.services-page .centered>p{color:#b7c3d4}
+.services-page .service-card{background:#fff;color:#0b1424;border-color:rgba(255,255,255,.25);box-shadow:0 12px 28px rgba(0,0,0,.12)}
+.services-page .service-card.featured{background:#16243a;color:#fff;border-color:#34445b}
+.services-page .service-card .service-icon{background:#e8edf4;color:#0b1424}
+.services-page .service-card.featured .service-icon{background:#fff;color:#0b1424}
+.services-page .service-card p{color:#58667a}
+.services-page .service-card.featured p{color:#d0d9e6}
+.services-page .service-card>a{color:#0b1424}
+.services-page .service-card.featured>a{color:#fff}
+.services-page .service-details{gap:20px}
+.services-page .service-detail{background:#fff;color:#0b1424;border:1px solid #e2e8f0;box-shadow:0 18px 38px rgba(0,0,0,.14)}
+.services-page .service-detail:nth-child(even){background:#111f33;color:#f5f8fc;border-color:#2d3b50}
+.services-page .service-detail h2{color:#0b1424}
+.services-page .service-detail:nth-child(even) h2{color:#fff}
+.services-page .service-detail p{color:#5f6c80}
+.services-page .service-detail:nth-child(even) p{color:#c0cada}
+.services-page .service-detail ul{color:#344155}
+.services-page .service-detail:nth-child(even) ul{color:#e0e7f0}
+.services-page .detail-number{color:#0b1424}
+.services-page .service-detail:nth-child(even) .detail-number{color:#dce5f1}
+.services-page .detail-panel{background:#edf1f6;border-color:#dce3ed}
+.services-page .detail-panel strong{color:#0b1424}
+.services-page .detail-panel p{color:#5f6c80}
+.services-page .service-detail:nth-child(even) .detail-panel{background:#0b1424;border-color:#35445a}
+.services-page .service-detail:nth-child(even) .detail-panel strong{color:#fff}
+.services-page .service-detail:nth-child(even) .detail-panel p{color:#c0cada}
+.services-page .services-cta{background:#fff;color:#0b1424;border:1px solid #e2e8f0}
+.services-page .services-cta p{color:#5f6c80}
+.services-page .services-cta .button{background:#0b1424;color:#fff}
+.services-page .services-cta .button:hover{background:#1a2a41}
+@media(max-width:680px){.services-page .service-detail{padding:22px}}
+
+/* v11: balanced navy and white service cards */
+.services-page .service-grid .service-card:nth-child(even){background:#16243a;color:#fff;border-color:#34445b}
+.services-page .service-grid .service-card:nth-child(even) .service-icon{background:#fff;color:#0b1424}
+.services-page .service-grid .service-card:nth-child(even) p{color:#d0d9e6}
+.services-page .service-grid .service-card:nth-child(even)>a{color:#fff}
+.services-page .service-grid .service-card:nth-child(odd){background:#fff;color:#0b1424}
+.services-page .service-grid .service-card:nth-child(odd) .service-icon{background:#e8edf4;color:#0b1424}
+.services-page .service-grid .service-card:nth-child(odd) p{color:#58667a}
+.services-page .service-grid .service-card:nth-child(odd)>a{color:#0b1424}
+
+/* Balanced navy-and-white cards on the homepage service preview too */
+.services-section:not(.services-page) .service-grid .service-card:nth-child(even){background:#16243a;color:#fff;border-color:#34445b}
+.services-section:not(.services-page) .service-grid .service-card:nth-child(even) .service-icon{background:#fff;color:#0b1424}
+.services-section:not(.services-page) .service-grid .service-card:nth-child(even) p{color:#d0d9e6}
+.services-section:not(.services-page) .service-grid .service-card:nth-child(even)>a{color:#fff}
+.services-section:not(.services-page) .service-grid .service-card:nth-child(odd){background:#fff;color:#0b1424}
+.services-section:not(.services-page) .service-grid .service-card:nth-child(odd) .service-icon{background:#e8edf4;color:#0b1424}
+.services-section:not(.services-page) .service-grid .service-card:nth-child(odd) p{color:#58667a}
+.services-section:not(.services-page) .service-grid .service-card:nth-child(odd)>a{color:#0b1424}
+
+/* Embedded Calendly booking calendar */
+.calendly-embed-wrap{width:100%;min-height:720px;margin-top:20px;border:1px solid #e1e8ef;border-radius:12px;overflow:hidden;background:#fff}
+.calendly-embed-wrap iframe{display:block;width:100%;height:720px;border:0;background:#fff}
+.calendar-fallback{margin:12px 0 0;font-size:11px;color:#66768a}
+.calendar-fallback a{color:#087e72;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:680px){.calendly-embed-wrap,.calendly-embed-wrap iframe{min-height:700px;height:700px}.calendar-card{overflow:hidden}}

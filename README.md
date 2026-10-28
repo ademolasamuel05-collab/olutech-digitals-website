@@ -46,3 +46,11 @@ A floating contact widget is now present on all pages. Email links use `ademolas
 - Platform icons are text-based badges rather than official logo artwork.
 
 - Founder quote card on About Us has been moved below the photo to prevent text covering the face.
+
+
+## Contact form integration
+The Contact page embeds the Olutech Digitals Google Form. Responses are collected in the Google account that owns the form; link the form to Google Sheets from its Responses tab to manage enquiries in a spreadsheet. Test the published form after deployment.
+
+
+## Booking calendar
+The booking page embeds the public Calendly event at https://calendly.com/ademolasamuel05/30min. Visitors can book from booking.html; a direct Calendly link is provided as a fallback.
